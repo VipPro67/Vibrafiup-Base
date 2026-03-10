@@ -1,0 +1,23 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: base
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5436/base_db}
+    username: ${SPRING_DATASOURCE_USERNAME:base_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:base_secret}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
+  instance:
+    prefer-ip-address: true
