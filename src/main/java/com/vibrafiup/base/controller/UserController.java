@@ -10,7 +10,7 @@ import com.vibrafiup.base.entity.User;
 import com.vibrafiup.base.service.UserService;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/user")
 @RequiredArgsConstructor
 public class UserController {
 

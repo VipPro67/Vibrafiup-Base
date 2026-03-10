@@ -11,7 +11,7 @@ import com.vibrafiup.base.entity.enums.EConfigType;
 import com.vibrafiup.base.service.ConfigService;
 
 @RestController
-@RequestMapping("/api/configs")
+@RequestMapping("/api/config")
 @RequiredArgsConstructor
 public class ConfigController {
 
